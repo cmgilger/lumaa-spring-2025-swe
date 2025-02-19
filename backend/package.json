@@ -3,22 +3,30 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon src/index.ts",
     "build": "tsc",
     "start": "npm run build && node dist/index.js",
-    "dev": "nodemon src/index.ts"
+    "test": "npm run build && jasmine"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@types/jasmine": "^5.1.6",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
+    "jasmin": "^0.0.2",
+    "jasmine-spec-reporter": "^7.0.0",
     "yarn": "^1.22.22"
   },
   "devDependencies": {
+    "@types/express": "^5.0.0",
     "@types/node": "^22.13.4",
+    "@types/supertest": "^6.0.2",
+    "jasmine": "^5.6.0",
     "nodemon": "^3.1.9",
+    "supertest": "^7.0.0",
     "typescript": "^5.7.3"
   }
 }
